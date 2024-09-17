@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venia - Biggest shopping center</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+
+<body>
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      
+
+      <a href="#" class="logo">
+        <h2>VENIA</h2>
+      </a>
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#home" class="navbar-link">Home</a>
+        </li>
+
+        <li>
+          <a href="#" class="navbar-link">Women</a>
+        </li>
+
+        <li>
+          <a href="#" class="navbar-link">Men</a>
+        </li>
+
+        <li>
+          <a href="#blog" class="navbar-link">Smart Gear</a>
+        </li>
+
+        <li>
+          <a href="#" class="navbar-link">Accessories</a>
+        </li>
+
+
+      </ul>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+          <div class="btn-badge black" aria-hidden="true">10</div>
+        </button>
+
+      </div>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+        <ul class="navbar-list-mobile" style="
+        display: block;
+    ">
+    
+            <li>
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
+    
+            <li>
+              <a href="#" class="navbar-link">Women</a>
+            </li>
+    
+            <li>
+              <a href="#" class="navbar-link">Men</a>
+            </li>
+    
+            <li>
+              <a href="#blog" class="navbar-link">Smart Gear</a>
+            </li>
+    
+            <li>
+              <a href="#" class="navbar-link">Accessories</a>
+            </li>
+    
+    
+          </ul>
+        
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+      <div class="row">
+        <div class="column column1" style="background: #1B252C 0% 0% no-repeat padding-box;;">
+          <h2>Men's Outwear</h2>
+         </div>
+        
+        <div class="column column2 hero" style="background-image: url('./assets/images/hero-banner.jpg')">
+        </div>
+      </div>
+      <section class="section product">
+        <div class="left-section">
+          <h3>Filters</h3><hr><h3>catergories</h3>
+          <div class="select-container filter-btn">
+          <input type="checkbox" name="category" value="jewellery" id="jewellery"><label> Jewellery</label><br>
+          <input type="checkbox" name="category" value="electronics" id="electronics"><label> Electronics</label><br> 
+          <input type="checkbox" name="category" value="mensclothing" id="mensclothing"> <label>Men's Clothing</label><br>                     
+          <input type="checkbox" name="category" value="womensclothing" id="womensclothing"><label> Women's Clothing</label><br>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-bottom">
+            <div class="header-search">
+              <input type="search" name="search" placeholder="Search Product..." class="input-field"
+              id="search-input">
+      
+              <button class="search-btn" aria-label="Search">
+                <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"></ion-icon>
+              </button>
+            </div>
+            <div class="container">
+      
+              <div style="
+          width: 50%;
+      "><h3 class="section-title">20 products</h3></div>
+      <div class="select-container">
+                  <select name="sort" id="sort-btn">
+                    <option value="0" hidden="">Categories</option>
+                    <option value="price_lh">Sort by Price (low to high)</option>
+                    <option value="price_hl">Sort by Price (high to low)</option>
+                    <option value="ascending">Sort by Name (A - Z)</option>
+                    <option value="descending">Sort by Name (Z - A)</option>
+                  </select>
+                </div>
+            </div>
+          </div>
+          <ul class="product-list" id="product-data">
+          </ul>
+
+          <button class="btn btn-outline load-more">Load More</button>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Account</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sign In</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Register</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Order Status</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">About Us</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Story</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Careers</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Help</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Order Status</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Returns</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Follow Us!</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore.</a>
+          </li>
+          <li>
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <img src="./assets/images/insta-icon.png" alt="instagram" width="21" height="21">
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <img src="./assets/images/facebook-icon.png" alt="facebook" width="14" height="21">
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <img src="./assets/images/twitter-image.png" alt="twitter" width="21" height="21">
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+              </div>
+    </div>
+
+    <div class="footer-bottom">
+      
+      <div class="container">
+
+        <p class="copyright">
+          © Company Name Address Ave, City Name, State ZIP
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link"><u>Terms of Use</u></a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link"><u>Privacy Policy</u></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
